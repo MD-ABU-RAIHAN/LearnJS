@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="asset/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="asset/icon.png" type="image/x-icon" />
 
     <title>Document</title>
 
     <link rel="stylesheet" href="css/output.css" />
-</head>
+  </head>
 
-<body>
-    <nav>
-        <p class="nav_title">Log in to get started</p>
-        <img src="asset/logo.png" alt="logo" class="nav_logo"></p>
-        <form action="" class="nav_form">
-            <input type="text" name="" id="" class="login_input logiin_input--user" placeholder="user">
+  <body class="bg-gray-100 text-gray-800 p-6">
+    <nav class="flex flex-row justify-between items-center pl-4 pr-4">
+      <p class="nav_title font-semibold text-xl">Log in to get started</p>
+      <img src="asset/logo.png" alt="logo" class="nav_logo size-16" />
+      <form action="" class="nav_form flex flex-row gap-3">
+        <input
+          type="text"
+          name=""
+          id=""
+          class="login_input logiin_input--user text-lg p-1 w-32 text-center rounded-full border transition-all focus:border focus:outline-none focus:border-gray-100"
+          placeholder="user"
+        />
 
-            <input type="text" name="" id="" class="login_input login_input--pin">
-            <button class="login_btn">&rarr;</button>
-        </form>
+        <input
+          type="text"
+          placeholder="PIN"
+          name=""
+          id=""
+          class="login_input login_input--pin text-lg p-1 w-32 text-center rounded-full"
+        />
+        <button class="login_btn text-3xl bg-none">&rarr;</button>
+      </form>
     </nav>
-</body>
-
+  </body>
 </html>
